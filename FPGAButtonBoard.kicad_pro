@@ -332,6 +332,14 @@
     [
       "1e4a6d62-d038-41b2-8f50-c1694b154a72",
       "DebounceCircuit2"
+    ],
+    [
+      "be813dec-c91f-4c06-808b-c742fd6baf99",
+      "Clock"
+    ],
+    [
+      "510535f1-0e55-4f79-baad-3bc8f34dbe6b",
+      "DebounceCircuit3"
     ]
   ],
   "text_variables": {}
