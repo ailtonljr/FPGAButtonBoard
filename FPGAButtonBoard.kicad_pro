@@ -322,12 +322,16 @@
       ""
     ],
     [
-      "2ceeb7df-cc02-4f20-aa03-f37494aa0983",
-      "DIPSwitch"
+      "5327a3e3-3361-4495-bd4d-590ae860faec",
+      "DebounceCircuit1"
     ],
     [
-      "66a9519c-3155-45d8-ac9e-42f1570cf59a",
-      "DIPSwitch1"
+      "52a39739-cee2-4d1c-afb0-6455a4d84f64",
+      "DebounceCircuit"
+    ],
+    [
+      "1e4a6d62-d038-41b2-8f50-c1694b154a72",
+      "DebounceCircuit2"
     ]
   ],
   "text_variables": {}
