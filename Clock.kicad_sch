@@ -623,7 +623,7 @@
     (property "Value" "1M" (id 1) (at 190.5 93.98 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Horizontal" (id 2) (at 190.5 95.25 0)
+    (property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal" (id 2) (at 190.5 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 190.5 95.25 0)
