@@ -1,0 +1,84 @@
+
+(rules PCB FPGAButtonBoard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2495)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    "Net-(C1-Pad1)" GND "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(C4-Pad1)" "Net-(C5-Pad1)" "Net-(C6-Pad1)" "Net-(C7-Pad1)"
+    "Net-(C8-Pad1)" "/Clock/CLOCK_OUT" /TRIG2 "/CLOCK_SEL" /TRIG1 "Net-(J1-Pad5)" /D0 "Net-(J1-Pad7)"
+    /D1 "Net-(J1-Pad9)" /D2 +5V "Net-(J1-Pad13)" /D3 "Net-(J1-Pad15)" /D4
+    "Net-(J1-Pad17)" /D5 "Net-(J1-Pad19)" /D6 "Net-(J1-Pad21)" /D7 "Net-(J1-Pad23)" /D8
+    "Net-(J1-Pad25)" /D9 "Net-(J1-Pad27)" /D10 +3V3 "Net-(J1-Pad31)" /D11 "Net-(J1-Pad33)"
+    /D12 "Net-(J1-Pad35)" /D13 "Net-(J1-Pad37)" /D14 "Net-(J1-Pad39)" /D15 "unconnected-(J2-Pad21)"
+    "unconnected-(J2-Pad22)" "unconnected-(J2-Pad23)" "unconnected-(J2-Pad24)" "unconnected-(J2-Pad27)" "unconnected-(J2-Pad28)" "unconnected-(J2-Pad29)" "unconnected-(J2-Pad30)" /DebounceCircuit3/DBC1
+    /DebounceCircuit3/DBC2 /DebounceCircuit3/DBC3 /DebounceCircuit3/DBC4 /DebounceCircuit3/DBC5 "Net-(R22-Pad2)" "Net-(R23-Pad2)" "Net-(R24-Pad1)" "/DebounceCircuit3/SW_IN_1"
+    "/DebounceCircuit3/SW_IN_2" "/DebounceCircuit3/SW_IN_3" "/DebounceCircuit3/SW_IN_4" "/DebounceCircuit3/SW_IN_5" "/DebounceCircuit3/SW_IN_6" "unconnected-(RV1-Pad1)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
