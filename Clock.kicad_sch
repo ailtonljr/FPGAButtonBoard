@@ -636,7 +636,7 @@
     (property "Reference" "C1" (id 0) (at 91.821 101.0725 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10uF" (id 1) (at 91.821 103.8476 0)
+    (property "Value" "47uF" (id 1) (at 91.821 103.8476 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" (id 2) (at 89.8652 106.68 0)
