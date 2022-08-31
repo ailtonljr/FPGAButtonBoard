@@ -6742,7 +6742,7 @@
   (gr_text "Pulsa" (at 193.04 135.255) (layer "F.SilkS") (tstamp be7646a7-6e9a-430b-8a19-0ea9b072fd2a)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "MEM_R - F13\nMEM_W - T15\nIO_R  - T13\nIO_W  - T12\n" (at 92.71 121.285) (layer "F.SilkS") (tstamp c0ea8401-5770-44f1-86a5-f03597e947dd)
+  (gr_text "MEM_R - T15\nMEM_W - F13\nIO_R  - T13\nIO_W  - T12\n" (at 92.71 121.285) (layer "F.SilkS") (tstamp c0ea8401-5770-44f1-86a5-f03597e947dd)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
   (gr_text "Ajuste de Freq." (at 175.895 135.89) (layer "F.SilkS") (tstamp c2c6b164-27a0-4ec9-b6a0-e7807f7f9940)
